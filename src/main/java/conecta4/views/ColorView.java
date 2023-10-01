@@ -1,7 +1,7 @@
 package conecta4.views;
 
 import conecta4.types.Color;
-import conecta4.utils.views.Console;
+import utils.views.Console;
 
 class ColorView {
 

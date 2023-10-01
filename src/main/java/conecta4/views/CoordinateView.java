@@ -2,9 +2,8 @@ package conecta4.views;
 
 import conecta4.types.Coordinate;
 import conecta4.types.Error;
-import conecta4.utils.models.ConcreteCoordinate;
-import conecta4.utils.models.SquareBoundedCoordinate;
-import conecta4.utils.views.SquareBoundedCoordinateView;
+import utils.models.ConcreteCoordinate;
+import utils.views.SquareBoundedCoordinateView;
 
 class CoordinateView extends SquareBoundedCoordinateView {
 

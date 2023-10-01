@@ -1,30 +1,24 @@
 package conecta4.types;
 
 import utils.models.ConcreteCoordinate;
-import utils.models.SquareBoundedCoordinate;
 
-public class Coordinate extends SquareBoundedCoordinate {
+public class Coordinate {
 
-    public static final int DIMENSION = 3;
-
+    public static final int ROW = 6;
+    public static final int COL = 7;
     public Coordinate() {
         super();
     }
 
     public Coordinate(int row, int column) {
-        super(row, column);
+        new Coordinate(row, column);
     }
 
-    public Coordinate(ConcreteCoordinate concreteCoordinate) {
-        super(concreteCoordinate);
-    }
 
-    @Override
-    protected int getDimension() {
+    /*protected int getDimension() {
         return Coordinate.DIMENSION;
     }
 
-    @Override
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
@@ -40,6 +34,6 @@ public class Coordinate extends SquareBoundedCoordinate {
                 return false;
         }
         return true;
-    }
+    }*/
 
 }

@@ -15,7 +15,8 @@ class ConectaCuatro {
 
     private void play() {
         do {
-            this.view.start();
+
+            this.view.start();//DIBUJAR TABLERO
             this.view.play();
         } while (this.view.resume());
     }

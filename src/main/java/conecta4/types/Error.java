@@ -1,4 +1,4 @@
-package usantatecla.tictactoe.types;
+package conecta4.types;
 
 public enum Error {
 

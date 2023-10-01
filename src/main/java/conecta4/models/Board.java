@@ -2,7 +2,6 @@ package conecta4.models;
 
 import conecta4.types.Color;
 import conecta4.types.Coordinate;
-import utils.models.Direction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,39 +9,31 @@ import java.util.List;
 class Board {
 
     private Color[][] colors;
-
+    private Player player;
     Board() {
-        this.colors = new Color[Coordinate.DIMENSION][Coordinate.DIMENSION];
+        this.colors = new Color[Coordinate.ROW][Coordinate.COL];
         this.reset();
     }
 
     void reset() {
-        for (int i = 0; i < Coordinate.DIMENSION; i++) {
-            for (int j = 0; j < Coordinate.DIMENSION; j++) {
+        for (int i = 0; i < Coordinate.ROW; i++) {
+            for (int j = 0; j < Coordinate.COL; j++) {
                 this.colors[i][j] = Color.NULL;
             }
         }
     }
 
-    void putToken(Coordinate coordinate, Color color) {
-        assert !coordinate.isNull();
-
-        this.colors[coordinate.getRow()][coordinate.getColumn()] = color;
+    void putToken(int col, Color color) {
+        for (int i = 0; i < 6; i++) {
+            if (this.colors[i][col].isNull()) {
+                this.colors[i][col] = color;
+                break;
+            }
+        }
     }
 
-    void moveToken(Coordinate origin, Coordinate target) {
-        assert !origin.isNull() && !this.isEmpty(origin);
-        assert !target.isNull() && this.isEmpty(target);
-        assert !origin.equals(target);
-
-        Color color = this.getColor(origin);
-        this.putToken(origin, Color.NULL);
-        this.putToken(target, color);
-    }
 
     Color getColor(Coordinate coordinate) {
-        assert !coordinate.isNull();
-
         return this.colors[coordinate.getRow()][coordinate.getColumn()];
     }
 
@@ -52,6 +43,17 @@ class Board {
 
     boolean isEmpty(Coordinate coordinate) {
         return this.isOccupied(coordinate, Color.NULL);
+    }
+
+    boolean isBoardFull(Coordinate coordinate) {
+        for(int i = 0; i < Coordinate.ROW; i++ ) {
+            for(int j = 0; j < Coordinate.COL; j++) {
+                if(this.isEmpty(coordinate)) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     boolean isConnectFour(Color color) {
@@ -86,8 +88,8 @@ class Board {
         assert !color.isNull();
 
         List<Coordinate> coordinates = new ArrayList<>();
-        for (int i = 0; i < Coordinate.DIMENSION; i++) {
-            for (int j = 0; j < Coordinate.DIMENSION; j++) {
+        for (int i = 0; i < Coordinate.ROW; i++) {
+            for (int j = 0; j < Coordinate.COL; j++) {
                 if (this.getColor(new Coordinate(i, j)) == color) {
                     coordinates.add(new Coordinate(i, j));
                 }

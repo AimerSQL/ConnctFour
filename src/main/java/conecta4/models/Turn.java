@@ -39,28 +39,12 @@ public class Turn {
         return this.getActivePlayer().getColor();
     }
 
-    boolean areAllTokensOnBoard() {
-        return this.getActivePlayer().areAllTokensOnBoard();
+    boolean isColumnFull(int col) {
+        return this.getActivePlayer().isColumnFull(col);
     }
 
-    void putToken(Coordinate coordinate) {
-        this.getActivePlayer().putToken(coordinate);
-    }
-
-    Error getPutTokenError(Coordinate coordinate) {
-        return this.getActivePlayer().getPutTokenError(coordinate);
-    }
-
-    void moveToken(Coordinate origin, Coordinate target) {
-        this.getActivePlayer().moveToken(origin, target);
-    }
-
-    Error getOriginMoveTokenError(Coordinate coordinate) {
-        return this.getActivePlayer().getOriginMoveTokenError(coordinate);
-    }
-
-    Error getTargetMoveTokenError(Coordinate origin, Coordinate target) {
-        return this.getActivePlayer().getTargetMoveTokenError(origin, target);
+    void putToken(int col) {
+        this.getActivePlayer().putToken(col);
     }
 
 }

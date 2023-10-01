@@ -19,40 +19,25 @@ class Player {
         this.putTokens = 0;
     }
 
-    boolean areAllTokensOnBoard() {
-        return this.putTokens == Coordinate.DIMENSION;
+    boolean isColumnFull(int col) {
+        int i = 0;
+        do {
+            if (!board.isEmpty(new Coordinate(col, i))) {
+                i++;
+            } else {
+                return true;
+            }
+        } while (i < Coordinate.ROW);
+        return false;
+
     }
 
-    void putToken(Coordinate coordinate) {
-        assert this.putTokens < Coordinate.DIMENSION;
-
-        this.board.putToken(coordinate, this.color);
-        this.putTokens++;
+    void putToken(int column) {
+        this.board.putToken(column, this.color);
     }
 
     Error getPutTokenError(Coordinate coordinate) {
         if (!this.board.isEmpty(coordinate)) {
-            return Error.NOT_EMPTY;
-        }
-        return Error.NULL;
-    }
-
-    void moveToken(Coordinate origin, Coordinate target) {
-        this.board.moveToken(origin, target);
-    }
-
-    Error getOriginMoveTokenError(Coordinate origin) {
-        if (!this.board.isOccupied(origin, this.color)) {
-            return Error.NOT_OWNER;
-        }
-        return Error.NULL;
-    }
-
-    Error getTargetMoveTokenError(Coordinate origin, Coordinate target) {
-        if (origin.equals(target)) {
-            return Error.SAME_COORDINATES;
-        }
-        if (!this.board.isEmpty(target)) {
             return Error.NOT_EMPTY;
         }
         return Error.NULL;

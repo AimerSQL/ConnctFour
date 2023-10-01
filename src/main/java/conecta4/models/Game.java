@@ -31,32 +31,19 @@ public class Game {
         return this.board.isConnectFour(this.turn.getActiveColor());
     }
 
+    public boolean isBoardFull() {
+        return this.board.isBoardFull();
+    }
     public Color getColor(Coordinate coordinate) {
         return this.board.getColor(coordinate);
     }
 
-    public boolean areAllTokensOnBoard() {
-        return this.turn.areAllTokensOnBoard();
+    public boolean isColumnFull(int col) {
+        return this.turn.isColumnFull(col);
     }
 
-    public void putToken(Coordinate coordinate) {
-        this.turn.putToken(coordinate);
-    }
-
-    public Error getPutTokenError(Coordinate coordinate) {
-        return this.turn.getPutTokenError(coordinate);
-    }
-
-    public void moveToken(Coordinate origin, Coordinate target) {
-        this.turn.moveToken(origin, target);
-    }
-
-    public Error getOriginMoveTokenError(Coordinate coordinate) {
-        return this.turn.getOriginMoveTokenError(coordinate);
-    }
-
-    public Error getTargetMoveTokenError(Coordinate origin, Coordinate target) {
-        return this.turn.getTargetMoveTokenError(origin, target);
+    public void putToken(int col) {
+        this.turn.putToken(col);
     }
 
     @Override
