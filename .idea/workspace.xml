@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4a17756-54f2-4f2d-9853-a92a6e7f86e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/ConectaCuatro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/models/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/models/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/models/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/models/Turn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/types/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/types/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/types/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/BoardView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/ColorView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/CoordinateView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/ErrorView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/PlayView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/PlayerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/ResumeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/StartView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/WithGameView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
