@@ -1,14 +1,12 @@
 package conecta4.models;
 
 import conecta4.types.Color;
-import conecta4.types.Coordinate;
-import conecta4.types.Error;
 
 public class Turn {
 
-    private Board board;
+    private final Board board;
     public static final int NUMBER_PLAYERS = 2;
-    private Player[] players;
+    private final Player[] players;
     private int activePlayer;
 
     Turn(Board board) {

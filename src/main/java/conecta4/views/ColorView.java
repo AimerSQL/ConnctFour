@@ -1,7 +1,6 @@
 package conecta4.views;
 
 import conecta4.types.Color;
-import utils.views.Console;
 
 class ColorView {
 
@@ -10,7 +9,6 @@ class ColorView {
         if (color.isNull()) {
             string = " ";
         }
-        Console.getInstance().write(string);
+        System.out.print(string);
     }
-
 }

@@ -12,9 +12,6 @@ public enum Color {
         return Color.values()[ordinal];
     }
 
-    public static void set(int ordinal) {
-
-    }
     public boolean isNull() {
         return this == Color.NULL;
     }

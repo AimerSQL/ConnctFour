@@ -2,13 +2,10 @@ package conecta4.models;
 
 import conecta4.types.Color;
 import conecta4.types.Coordinate;
-import conecta4.types.Error;
-
 class Player {
 
-    private Color color;
-    private Board board;
-    private int putTokens;
+    private final Color color;
+    private final Board board;
 
     Player(Color color, Board board) {
         assert !color.isNull();
@@ -16,31 +13,23 @@ class Player {
 
         this.color = color;
         this.board = board;
-        this.putTokens = 0;
     }
 
     boolean isColumnFull(int col) {
         int i = 0;
         do {
-            if (!board.isEmpty(new Coordinate(col, i))) {
+            if (!board.isEmpty(new Coordinate(i, col))) {
                 i++;
             } else {
-                return true;
+                return false;
             }
         } while (i < Coordinate.ROW);
-        return false;
+        return true;
 
     }
 
     void putToken(int column) {
         this.board.putToken(column, this.color);
-    }
-
-    Error getPutTokenError(Coordinate coordinate) {
-        if (!this.board.isEmpty(coordinate)) {
-            return Error.NOT_EMPTY;
-        }
-        return Error.NULL;
     }
 
     Color getColor() {

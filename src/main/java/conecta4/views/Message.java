@@ -1,38 +1,31 @@
 package conecta4.views;
 
-import utils.views.Console;
 
 public enum Message {
     TITLE("--- CONNECT 4 ---"),
     HORIZONTAL_LINE("---------------"),
     VERTICAL_LINE(" | "),
+    JUMP_LINE("\n"),
     ENTER_COLUMN_TO_PUT("Enter a column to put a token:"),
-    PLAYER_WIN("#player player: You win!!! :-)"),
+    THIS_COLUMN_IS_FULL("This column is full, choose another column plz:"),
+    PLAYER_WIN(" : You win!!! :-)"),
     RESUME("Do you want to continue");
 
-    private String message;
+    private final String message;
 
     Message(String message) {
         this.message = message;
     }
 
     void write() {
-        Console.getInstance().write(this.message);
+        System.out.print(this.message);
     }
 
     void writeln() {
-        Console.getInstance().writeln(this.message);
+        System.out.println(this.message);
     }
 
     void writeln(String player) {
-        assert this == Message.PLAYER_WIN;
-
-        Console.getInstance().writeln(this.message.replaceAll("#player", "" + player));
+        System.out.println("player " + player + this.message);
     }
-
-    @Override
-    public String toString() {
-        return message;
-    }
-
 }

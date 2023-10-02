@@ -2,19 +2,18 @@ package conecta4.views;
 
 import conecta4.models.Game;
 import conecta4.types.Coordinate;
-import utils.views.Console;
 
 class BoardView {
 
     void write(Game game) {
         Message.HORIZONTAL_LINE.writeln();
-        for (int i = 0; i < Coordinate.DIMENSION; i++) {
+        for (int i = Coordinate.ROW - 1; i >= 0; i--) {
             Message.VERTICAL_LINE.write();
-            for (int j = 0; j < Coordinate.DIMENSION; j++) {
+            for (int j = 0; j < Coordinate.COL; j++) {
                 new ColorView().write(game.getColor(new Coordinate(i, j)));
                 Message.VERTICAL_LINE.write();
             }
-            Console.getInstance().writeln();
+            Message.JUMP_LINE.write();
         }
         Message.HORIZONTAL_LINE.writeln();
     }
