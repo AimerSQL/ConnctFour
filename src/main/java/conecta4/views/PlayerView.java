@@ -3,6 +3,8 @@ package conecta4.views;
 import conecta4.models.Game;
 import conecta4.types.Coordinate;
 
+
+
 import java.util.Scanner;
 
 class PlayerView {
@@ -19,11 +21,19 @@ class PlayerView {
         do{
             Message.ENTER_COLUMN_TO_PUT.writeln();
             col = scanner.nextInt() - 1;
-            if(this.game.isColumnFull(col)) {
-                Message.THIS_COLUMN_IS_FULL.writeln();
-            }
+
         }while(this.game.isColumnFull(col));
+
         this.game.putToken(col);
+
+        if (this.game.isBoardFull()) {
+            Message.GAME_IS_DRAW.writeln();
+        }
+
+        else if (this.game.isColumnFull(col)){
+            Message.THIS_COLUMN_IS_FULL.writeln();
+        }
+
     }
 
 }

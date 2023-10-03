@@ -7,7 +7,8 @@ public enum Message {
     VERTICAL_LINE(" | "),
     JUMP_LINE("\n"),
     ENTER_COLUMN_TO_PUT("Enter a column to put a token:"),
-    THIS_COLUMN_IS_FULL("This column is full, choose another column plz:"),
+    THIS_COLUMN_IS_FULL("This column is full, choose another column plz"),
+    GAME_IS_DRAW("This game is a draw"),
     PLAYER_WIN(" : You win!!! :-)"),
     RESUME("Do you want to continue");
 

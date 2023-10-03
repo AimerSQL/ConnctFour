@@ -26,20 +26,13 @@ public class Game {
         return this.turn.getActiveColor();
     }
 
-    public boolean isConnectFour() {
-        return this.board.isConnectFour(this.turn.getActiveColor());
-    }
+    public boolean isConnectFour() {return this.board.isConnectFour(this.turn.getActiveColor());}
 
-    public boolean isBoardFull() {
-        return this.board.isBoardFull();
-    }
-    public Color getColor(Coordinate coordinate) {
-        return this.board.getColor(coordinate);
-    }
+    public boolean isBoardFull() {return this.board.isBoardFull();}
 
-    public boolean isColumnFull(int col) {
-        return this.turn.isColumnFull(col);
-    }
+    public Color getColor(Coordinate coordinate) {return this.board.getColor(coordinate);}
+
+    public boolean isColumnFull(int col) {return this.turn.isColumnFull(col);}
 
     public void putToken(int col) {
         this.turn.putToken(col);

@@ -5,24 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4a17756-54f2-4f2d-9853-a92a6e7f86e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/conecta4/types/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/ConectaCuatro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/ConectaCuatro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/models/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/models/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/models/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/models/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/models/Turn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/types/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/types/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/types/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/types/Coordinate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/types/Error.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/views/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/BoardView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/views/ColorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/ColorView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/views/CoordinateView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/views/ErrorView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/types/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/types/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/views/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/views/PlayerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/PlayerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/views/ResumeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/ResumeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/views/WithGameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/WithGameView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +35,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -60,11 +58,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/junjie/Desktop/ConnctFour-master",
+    "last_opened_file_path": "C:/Users/adaya/Desktop/Conecta4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RunManager" selected="Application.ConectaCuatro">
@@ -107,6 +106,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ConectaCuatro" />
@@ -123,48 +133,33 @@
       <option name="presentableId" value="Default" />
       <updated>1696161544849</updated>
       <workItem from="1696169016156" duration="2440000" />
+      <workItem from="1696272691784" duration="552000" />
+      <workItem from="1696332607557" duration="12671000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/conecta4/models/Player.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/conecta4/views/View.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/conecta4/views/ResumeView.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/conecta4/views/ResumeView.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/conecta4/views/ResumeView.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="conecta4.models.Player" memberName="board" />
+        <PinnedItemInfo parentTag="conecta4.models.Board" memberName="colors" />
       </pinned-members>
     </pin-to-top-manager>
     <watches-manager>

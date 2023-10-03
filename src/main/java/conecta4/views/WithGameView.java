@@ -9,5 +9,5 @@ abstract class WithGameView {
     WithGameView(Game game) {
         this.game = game;
     }
-
+    
 }

@@ -29,17 +29,11 @@ public class Turn {
         }
     }
 
-    Player getActivePlayer() {
-        return this.players[this.activePlayer];
-    }
+    Player getActivePlayer() {return this.players[this.activePlayer];}
 
-    Color getActiveColor() {
-        return this.getActivePlayer().getColor();
-    }
+    Color getActiveColor() {return this.getActivePlayer().getColor();}
 
-    boolean isColumnFull(int col) {
-        return this.getActivePlayer().isColumnFull(col);
-    }
+    boolean isColumnFull(int col) {return this.getActivePlayer().isColumnFull(col);}
 
     void putToken(int col) {
         this.getActivePlayer().putToken(col);

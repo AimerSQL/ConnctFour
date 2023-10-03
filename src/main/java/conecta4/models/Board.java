@@ -67,7 +67,6 @@ class Board {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -89,7 +88,5 @@ class Board {
     private boolean isValidCoordinate(int x, int y) {
         return x >= 0 && x < Coordinate.ROW && y >= 0 && y < Coordinate.COL;
     }
-
-
 
 }
