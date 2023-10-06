@@ -9,7 +9,7 @@ class Board {
     private final Color[][] colors;
     private Coordinate position;
 
-    public String test;
+    public String test2;
     Board() {
         this.colors = new Color[Coordinate.ROW][Coordinate.COL];
         this.reset();
