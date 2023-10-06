@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4a17756-54f2-4f2d-9853-a92a6e7f86e9" name="Changes" comment="">
+    <list default="true" id="b4a17756-54f2-4f2d-9853-a92a6e7f86e9" name="Changes" comment="added test issue#1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/models/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/models/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/models/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/models/Turn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/types/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/types/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/views/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/views/PlayerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/PlayerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conecta4/views/WithGameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conecta4/views/WithGameView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,17 +23,29 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AimerSQL"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f54f14ad-f097-4628-881f-430a3fb12f5b" />
+        <option name="url" value="https://github.com/AimerSQL/ConnctFour.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -57,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "issue#1",
     "last_opened_file_path": "C:/Users/adaya/Desktop/Conecta4",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -106,21 +111,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ConectaCuatro" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ConectaCuatro" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +133,15 @@
       <workItem from="1696272691784" duration="552000" />
       <workItem from="1696332607557" duration="12671000" />
     </task>
+    <task id="LOCAL-00001" summary="added test issue#1">
+      <option name="closed" value="true" />
+      <created>1696604700373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696604700373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +159,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="added test issue#1" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test issue#1" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
