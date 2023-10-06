@@ -7,6 +7,7 @@ public class Game {
 
     private final Board board;
     private final Turn turn;
+    private String test5;
 
     public Game() {
         this.board = new Board();
